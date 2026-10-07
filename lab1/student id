@@ -1,0 +1,63 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: const Color(0xfff9f4f3),
+        appBar: AppBar(
+          title: const Text('Student Profile Card'),
+          backgroundColor: Colors.deepPurpleAccent,
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const SizedBox(height: 30),
+              const CircleAvatar(
+                radius: 70,
+                backgroundImage: AssetImage('assets/images/myimage.jpeg'),
+              ),
+              const SizedBox(height: 20),
+              const Text(
+                "T sai chandu",
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const Text(
+                "Roll No: 24PA1A05N1",
+                style: TextStyle(fontSize: 20),
+              ),
+              const Text(
+                "Branch: CSE",
+                style: TextStyle(fontSize: 20),
+              ),
+              const SizedBox(height: 10),
+              Container(
+                width: 300,
+                height: 30,
+                color: const Color(0xfff6c5c5),
+                child: Row(
+                  children: [
+                    const Icon(
+                      Icons.phone_callback_outlined,
+                      color: Color(0xff272222),
+                      size: 20,
+                    ),
+                    const SizedBox(width: 8),
+                    const Text(
+                      "125678905",
+                      style: TextStyle(fontSize: 20),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
+}
